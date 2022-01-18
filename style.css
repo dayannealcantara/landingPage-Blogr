@@ -138,3 +138,25 @@ body {
   color: #fff;
   background: #ff525d;
 }
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+}
+.content h1 {
+  font-size: 3.5rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.content p {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-bottom: 3rem;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+}
