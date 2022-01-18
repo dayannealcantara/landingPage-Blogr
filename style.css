@@ -160,3 +160,43 @@ body {
   font-family: "Ubuntu", sans-serif;
   font-weight: 400;
 }
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.links li {
+  list-style: none;
+  margin: 0 0.5rem;
+}
+.links li a {
+  text-decoration: none;
+  padding: 0.7rem 1.5rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 700;
+  font-family: "Ubuntu", sans-serif;
+}
+.start {
+  background: #fff;
+  color: #ff525d;
+  border-radius: 2rem;
+  transition: 0.5s;
+}
+
+.start:hover {
+  background: #ff525d;
+  color: #fff;
+}
+
+.learn {
+  background: #fff;
+  color: #ff525d;
+  border-radius: 2rem;
+  transition: 0.5s;
+}
+
+.learn:hover {
+  background: #ff525d;
+  color: #fff;
+}
