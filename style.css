@@ -64,3 +64,31 @@ body {
 .menu li .navegacao:hover {
   display: block;
 }
+.navegacao ul {
+  position: absolute;
+  margin-top: 2rem;
+  margin-left: -2rem;
+  background: #fff;
+  padding: 1.5rem;
+  text-align: left;
+  border-radius: 5px;
+  box-shadow: 0 0 15px 3px rgba(0, 0, 0, 0.4);
+}
+.navegacao ul li {
+  display: block;
+  margin-bottom: 1rem;
+}
+.navegacao ul li:last-child {
+  margin-bottom: 0;
+}
+
+.navegacao ul li a {
+  color: #8f8f8f;
+  transition: 0.5s;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.navegacao ul li a:hover {
+  color: #0d0d0d;
+}
