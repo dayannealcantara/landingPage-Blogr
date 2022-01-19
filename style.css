@@ -23,12 +23,12 @@ body {
   background-color: #ff525d;
 }
 
-.navMenu {
+.cabecalho .navMenu {
   display: flex;
   align-items: center;
 }
 
-.menu {
+.cabecalho .navMenu .menu {
   flex: 1;
   margin-left: 3.5rem;
   display: flex;
@@ -56,12 +56,16 @@ body {
   transition: 0.5s;
 }
 
+.menu li:hover img {
+  transform: rotate(-180deg);
+}
+
 .menu li .navegacaoMenu {
   display: none;
   transition: 0.5s;
   z-index: 10;
 }
-.menu li .navegacaoMenu:hover {
+.menu li:hover .navegacaoMenu {
   display: block;
 }
 .navegacaoMenu ul {
@@ -137,6 +141,11 @@ body {
   color: #fff;
   background: #ff525d;
 }
+
+#mobileMenu {
+  display: none;
+}
+
 .header {
   position: absolute;
   top: 50%;
@@ -198,4 +207,168 @@ body {
 .learn:hover {
   background: #ff525d;
   color: #fff;
+}
+
+.mobileNav {
+  display: none;
+}
+
+/** Responsividade **/
+
+@media (max-width: 991px) {
+  .cabecalho {
+    background: url(./images/bg-pattern-intro-mobile.svg);
+    background-position: center;
+    background-size: 400%;
+    padding: 4rem 1.5rem;
+    background-color: #d86472;
+  }
+
+  .cabecalho .navMenu {
+    justify-content: space-between;
+  }
+
+  .cabecalho .navMenu .menu {
+    display: none;
+  }
+
+  .cabecalho .navMenu .registrar {
+    display: none;
+  }
+
+  .start {
+    padding: 1rem;
+    font-size: 0.8rem;
+    display: block;
+  }
+
+  .learn {
+    padding: 1rem;
+    font-size: 0.8rem;
+    display: block;
+  }
+
+  #mobileMenu {
+    display: block;
+  }
+
+  .cabecalho .header {
+    padding: 0 1.5rem;
+  }
+  .cabecalho .header h1 {
+    font-size: 2.3rem;
+  }
+  .cabecalho .header p {
+    margin-bottom: 4rem;
+  }
+  .cabecalho .header .links li a {
+    padding: 1.2rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  #mobileNav {
+    display: block;
+    position: absolute;
+    top: 8.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 85%;
+    padding: 2rem 1.5rem;
+    background: #ffffff;
+    box-shadow: 0 0 30px 3px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    border: none;
+    border-radius: 0.5rem;
+    z-index: 10;
+    transition: 0.5s;
+  }
+  .mobileNav ul li {
+    list-style: none;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .mobileNav ul li a {
+    text-decoration: none;
+    color: #25252d;
+    font-size: 1.2rem;
+    font-weight: 300;
+    font-family: "Ubuntu", sans-serif;
+  }
+  .mobileNav ul li img {
+    margin-left: 0.5rem;
+    transition: 0.5s;
+  }
+  .mobileNav ul li:nth-child(3) {
+    position: relative;
+  }
+
+  .mobileNav ul li:hover img {
+    transform: rotate(-180deg);
+  }
+
+  .mobileNav ul .conect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mobileNav ul .conect .conectTitulo {
+    display: flex;
+    align-items: center;
+  }
+  .mobileNav ul .conect .mobileMenuD {
+    background: #ede9e9;
+    padding: 1.5rem 0;
+    width: 100%;
+    border-radius: 0.5rem;
+    display: none;
+    transition: 2s;
+  }
+  .mobileNav ul .conect:hover .mobileMenuD {
+    display: block;
+  }
+
+  .mobileNav ul .conect .mobileMenuD li:last-child {
+    margin-bottom: 0;
+  }
+
+  .mobileNav ul hr {
+    display: block;
+    border: none;
+    border-top: 1px solid #dad7d7;
+    margin: 2rem auto 2rem;
+    width: 100%;
+  }
+
+  .sign {
+    margin-bottom: 0;
+  }
+
+  .sign a {
+    padding: 0.8rem 2.5rem;
+    background: linear-gradient(90deg, #ff3d54, #ff8f70);
+    color: #ffffff;
+    border-radius: 2rem;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+  }
+
+  .sign a:hover {
+    background: linear-gradient(90deg, #ff3d54, #ff8f70);
+  }
+}
+
+@media (max-width: 320px) {
+  .cabecalho .header h1 {
+    font-size: 1.9rem;
+  }
+  .start {
+    padding: 1rem;
+    font-size: 0.8rem;
+  }
+  .learn {
+    padding: 1rem;
+    font-size: 0.8rem;
+  }
 }
