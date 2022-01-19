@@ -56,15 +56,15 @@ body {
   transition: 0.5s;
 }
 
-.menu li .navegacao {
+.menu li .navegacaoMenu {
   display: none;
   transition: 0.5s;
   z-index: 10;
 }
-.menu li .navegacao:hover {
+.menu li .navegacaoMenu:hover {
   display: block;
 }
-.navegacao ul {
+.navegacaoMenu ul {
   position: absolute;
   margin-top: 2rem;
   margin-left: -2rem;
@@ -74,22 +74,22 @@ body {
   border-radius: 5px;
   box-shadow: 0 0 15px 3px rgba(0, 0, 0, 0.4);
 }
-.navegacao ul li {
+.navegacaoMenu ul li {
   display: block;
   margin-bottom: 1rem;
 }
-.navegacao ul li:last-child {
+.navegacaoMenu ul li:last-child {
   margin-bottom: 0;
 }
 
-.navegacao ul li a {
+.navegacaoMenu ul li a {
   color: #8f8f8f;
   transition: 0.5s;
   cursor: pointer;
   text-decoration: none;
 }
 
-.navegacao ul li a:hover {
+.navegacaoMenu ul li a:hover {
   color: #0d0d0d;
 }
 
@@ -137,7 +137,7 @@ body {
   color: #fff;
   background: #ff525d;
 }
-.content {
+.header {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -145,14 +145,14 @@ body {
   text-align: center;
   width: 100%;
 }
-.content h1 {
+.header h1 {
   font-size: 3.5rem;
   color: #ffffff;
   margin-bottom: 1rem;
   font-family: "Ubuntu", sans-serif;
 }
 
-.content p {
+.header p {
   font-size: 1.2rem;
   color: #ffffff;
   margin-bottom: 3rem;
