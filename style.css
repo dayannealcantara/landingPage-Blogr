@@ -688,4 +688,13 @@ footer {
   .main .columnRight h3 {
     font-size: 1.5rem;
   }
+  .phone {
+    width: 320px;
+  }
+  .recursos-columnRight {
+    margin-top: 2rem;
+  }
+  .recursos-columnRight h4 {
+    font-size: 2.1rem;
+  }
 }
