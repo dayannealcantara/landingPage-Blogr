@@ -654,6 +654,18 @@ footer {
   .atributos-columnRight h5 {
     font-size: 1.7rem;
   }
+
+  /* ** Footer**/
+
+  footer {
+    padding: 4rem 0rem 6rem;
+    flex-wrap: wrap;
+  }
+  .rodape {
+    flex-basis: 100%;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
 }
 
 @media (max-width: 320px) {
