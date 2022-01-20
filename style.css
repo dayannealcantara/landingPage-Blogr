@@ -517,6 +517,28 @@ body {
     font-size: 1.1rem;
     margin-bottom: 3rem;
   }
+
+  /** Seção recursos do main **/
+
+  .recursos {
+    padding: 8rem 2rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .recursos-columnRight {
+    flex-basis: 100%;
+    text-align: center;
+    margin-top: 6rem;
+  }
+
+  .phone {
+    position: absolute;
+    left: 125%;
+    transform: translateX(-50%);
+    top: -19rem;
+    z-index: 3;
+    width: 375px;
+  }
 }
 
 @media (max-width: 320px) {
