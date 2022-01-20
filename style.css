@@ -272,6 +272,61 @@ body {
   display: none;
 }
 
+/** Seção recursos do main **/
+
+.recursos {
+  width: 100%;
+  padding: 8rem 10rem;
+  position: relative;
+  background: #2c2d3f;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top-right-radius: 6rem;
+  border-bottom-left-radius: 6rem;
+}
+
+.recursos-columnRight {
+  flex-basis: 50%;
+}
+
+.recursos-columnRight h4 {
+  font-size: 2.3rem;
+  color: #fff;
+  margin-bottom: 2rem;
+  font-family: "Overpass", sans-serif;
+  font-weight: 600;
+}
+.recursos-columnRight p {
+  font-size: 1.1rem;
+  color: #fff;
+  line-height: 1.9rem;
+  font-family: "Overpass", sans-serif;
+  font-weight: 300;
+}
+
+.recursos-columnLeft {
+  flex-basis: 40%;
+  position: relative;
+  background-image: url(./images/illustration-phones.svg);
+  background-position: center;
+  background-size: cover;
+}
+
+.phone {
+  position: absolute;
+  left: -5rem;
+  top: -16rem;
+  z-index: 3;
+}
+
+.circleImg {
+  position: absolute;
+  left: -25rem;
+  top: -50rem;
+  z-index: 1;
+  width: 250%;
+}
 /** Responsividade **/
 
 @media (max-width: 991px) {
